@@ -13,7 +13,7 @@ return {
         require("oil").setup {
             default_file_explorer = true,
             delete_to_trash = true,
-            prompt_save_on_select_new_entry = true,
+            prompt_save_on_select_new_entry = false,
             skip_confirm_for_simple_edits = true,
 
             columns = { "icon" },
