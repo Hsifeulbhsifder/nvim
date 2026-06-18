@@ -14,19 +14,19 @@ return {
   config = function()
     ---@type CompileModeOpts
     vim.g.compile_mode = {
-        -- if you use something like `nvim-cmp` or `blink.cmp` for completion,
-        -- set this to fix tab completion in command mode:
-        -- input_word_completion = true,
+      -- if you use something like `nvim-cmp` or `blink.cmp` for completion,
+      -- set this to fix tab completion in command mode:
+      -- input_word_completion = true,
 
-        -- to add ANSI escape code support, add:
-        -- baleia_setup = true,
+      -- to add ANSI escape code support, add:
+      -- baleia_setup = true,
 
-        -- to make `:Compile` replace special characters (e.g. `%`) in
-        -- the command (and behave more like `:!`), add:
-        -- bang_expansion = true,
-        default_command = "make -k -j18 SOC=",
-        recompile_no_fail = true,
-        buffer_name = "Builder",
+      -- to make `:Compile` replace special characters (e.g. `%`) in
+      -- the command (and behave more like `:!`), add:
+      -- bang_expansion = true,
+      default_command = "make -k -j10 SOC=",
+      recompile_no_fail = true,
+      buffer_name = "Builder",
     }
-  end
+  end,
 }
