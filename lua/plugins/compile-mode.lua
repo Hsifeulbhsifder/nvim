@@ -24,7 +24,9 @@ return {
       -- to make `:Compile` replace special characters (e.g. `%`) in
       -- the command (and behave more like `:!`), add:
       -- bang_expansion = true,
-      default_command = "make -k -j10 SOC=",
+      error_threshold = require("compile-mode").level.WARNING,
+      auto_scroll = true,
+      default_command = "make -k -j$(gnproc) SOC=",
       recompile_no_fail = true,
       buffer_name = "Builder",
     }
