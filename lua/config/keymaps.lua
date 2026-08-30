@@ -10,4 +10,6 @@ keymap("n", "<leader>rc", ":Compile<CR>", opts)
 keymap("n", "<leader>rr", ":Recompile<CR>", opts)
 keymap("n", "<leader>rn", ":NextError<CR>", opts)
 keymap("n", "<leader>rN", ":PrevError<CR>", opts)
-keymap('n', '<leader>ut', function() vim.opt.scrolloff = 999 - vim.o.scrolloff end)
+keymap("n", "<leader>ut", function()
+  vim.opt.scrolloff = 999 - vim.o.scrolloff
+end, { desc = "Toggle scroll lock" })
