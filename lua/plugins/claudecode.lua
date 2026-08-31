@@ -5,6 +5,10 @@ return {
     config = true,
     opts = {
       focus_after_send = false,
+      diff_opts = {
+        layout = "unified",
+        open_in_new_tab = false,
+      },
       terminal = {
         split_side = "right", -- "left" or "right"
         split_width_percentage = 0.40,
