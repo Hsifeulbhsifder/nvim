@@ -45,4 +45,3 @@ local function toggle_hex()
 end
 
 keymap("n", "<leader>hx", toggle_hex, { desc = "Toggle hex view (xxd)" })
->>>>>>> dce9518 (xxd support)
