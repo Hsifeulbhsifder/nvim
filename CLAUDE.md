@@ -44,6 +44,7 @@ lua/
 | `oil-git.nvim` | Git status decorations in oil | automatic |
 | `flash.nvim` | Motion jumps | `zk` jump, `Zk` treesitter jump; `r` remote (operator), `R` treesitter search (operator/visual), `<c-s>` toggle (cmdline) |
 | `onedarkpro.nvim` | Colorscheme | `onedark_dark` with transparency |
+| `zdiff.nvim` | Multi-buffer git diff viewer | `<leader>zd` prompts for a branch to diff against (blank = uncommitted changes); overrides `DiffAdd`/`DiffDelete` globally with opaque backgrounds so highlights show through onedarkpro's transparency |
 | floaterminal (`:T`) | Toggling floating terminal | `:T` — persists buffer across toggles |
 
 ## Key Options
