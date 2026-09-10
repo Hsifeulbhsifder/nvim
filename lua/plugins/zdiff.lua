@@ -16,8 +16,10 @@ return {
     {
       "<leader>zd",
       function()
-        vim.ui.input({ prompt = "Diff against branch: ", default = "" }, function(branch)
+        local last_branch = vim.g.zdiff_last_branch or ""
+        vim.ui.input({ prompt = "Diff against branch: ", default = last_branch }, function(branch)
           if branch then
+            vim.g.zdiff_last_branch = branch
             vim.cmd("Zdiff " .. branch)
           end
         end)
